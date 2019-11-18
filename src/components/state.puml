@@ -1,0 +1,9 @@
+@startuml ../../images/component/state.png
+class Provider << (S,yellow) state >> {
+  ~store
+}
+note right
+  <Provider store={store}>
+  </Provider>
+end note
+@enduml

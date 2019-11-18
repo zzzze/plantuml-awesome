@@ -1,0 +1,10 @@
+@startuml ../../images/component/container.png
+class App << (C,red) container >> {
+  ~store
+  ==state==
+  ==props==
+}
+note right
+  <App />
+end note
+@enduml

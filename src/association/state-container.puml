@@ -1,0 +1,12 @@
+@startuml ../../images/association/state-container.png
+class Provider << (S,yellow) state >> {
+  ~store
+}
+class App << (C,red) container >> {
+  ~store
+  ==state==
+  ==props==
+}
+Provider <..> App
+note "<Provider store={store}>\n  <App />\n</Provider>" as N1
+@enduml

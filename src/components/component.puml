@@ -1,0 +1,9 @@
+@startuml ../../images/component/component.png
+class Menu << (C,blue) component >> {
+  ==state==
+  ==props==
+}
+note right
+  <Menu {...props} />
+end note
+@enduml
