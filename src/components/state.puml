@@ -1,7 +1,13 @@
-@startuml ../../images/component/state.png
+@startuml ../../images/components/state.png
+
+skinparam shadowing false
+
+!startsub PROVIDER
 class Provider << (S,yellow) state >> {
   ~store
 }
+!endsub
+
 note right
   <Provider store={store}>
   </Provider>

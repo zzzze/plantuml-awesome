@@ -1,8 +1,14 @@
-@startuml ../../images/component/component.png
+@startuml ../../images/components/component-menu.png
+
+skinparam shadowing false
+
+!startsub MENU
 class Menu << (C,blue) component >> {
   ==state==
   ==props==
 }
+!endsub
+
 note right
   <Menu {...props} />
 end note

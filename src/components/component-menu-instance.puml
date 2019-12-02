@@ -1,0 +1,12 @@
+@startuml ../../images/components/component-menu-instance.png
+
+skinparam shadowing false
+
+!startsub MENU_INSTANCE
+class "MenuInstance:Menu" << (C,lightblue) instance >>
+!endsub
+
+note right
+  <Menu ref={el => (this.menu = el)}>
+end note
+@enduml

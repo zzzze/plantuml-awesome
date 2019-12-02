@@ -1,0 +1,15 @@
+@startuml ../../images/components/component-sidebar.png
+
+skinparam shadowing false
+
+!startsub SIDEBAR
+class Sidebar << (C,blue) component >> {
+  ==state==
+  ==props==
+}
+!endsub
+
+note right
+  <Sidebar {...props} />
+end note
+@enduml

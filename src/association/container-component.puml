@@ -1,0 +1,24 @@
+@startuml ../../images/association/container-component.png
+
+skinparam shadowing false
+
+!includesub ../components/container-app.puml!APP
+!includesub ../components/component-menu.puml!MENU
+!includesub ../components/component-sidebar.puml!SIDEBAR
+
+App o-- Menu
+App o-- Sidebar
+
+note as N1
+  class App extends React.Component {
+      render() {
+          return (
+              <div>
+                  <Menu {...props}>
+                  <Sidebar {...props}>
+              </div>
+          )
+      }
+  }
+end note
+@enduml

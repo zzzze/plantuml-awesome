@@ -1,0 +1,13 @@
+@startuml ../../images/association/component-instance.png
+
+skinparam shadowing false
+
+!includesub ../components/component-menu.puml!MENU
+!includesub ../components/component-menu-instance.puml!MENU_INSTANCE
+
+Menu <|-- "MenuInstance:Menu"
+
+note as N1
+  <Menu ref={el => (this.menu = el)}>
+end note
+@enduml

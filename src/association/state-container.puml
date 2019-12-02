@@ -1,12 +1,14 @@
 @startuml ../../images/association/state-container.png
-class Provider << (S,yellow) state >> {
-  ~store
-}
-class App << (C,red) container >> {
-  ~store
-  ==state==
-  ==props==
-}
+
+skinparam shadowing false
+
+!includesub ../components/state.puml!PROVIDER
+!includesub ../components/container-app.puml!APP
+
 Provider <..> App
-note "<Provider store={store}>\n  <App />\n</Provider>" as N1
+note as N1
+  <Provider store={store}>
+      <App />
+  </Provider>
+end note
 @enduml

@@ -1,0 +1,16 @@
+@startuml ../../images/association/association-all-01.png
+
+skinparam shadowing false
+
+!includesub ../components/state.puml!PROVIDER
+!includesub ../components/container-app.puml!APP
+!includesub ../components/component-menu.puml!MENU
+!includesub ../components/component-sidebar.puml!SIDEBAR
+!includesub ../components/component-menu-instance.puml!MENU_INSTANCE
+
+Provider <..> App
+App o-- Menu
+App o-- Sidebar
+Menu <|-- "MenuInstance:Menu"
+
+@enduml

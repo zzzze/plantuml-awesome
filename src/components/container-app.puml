@@ -1,9 +1,15 @@
-@startuml ../../images/component/container.png
+@startuml ../../images/components/container-app.png
+
+skinparam shadowing false
+
+!startsub APP
 class App << (C,red) container >> {
   ~store
   ==state==
   ==props==
 }
+!endsub
+
 note right
   <App />
 end note
